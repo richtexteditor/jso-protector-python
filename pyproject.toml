@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jso-protector"
+version = "0.1.0"
+description = "Python client for the JavaScript Obfuscator HTTP API. Companion to the jso-protector npm CLI."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "JavaScript Obfuscator" },
+]
+requires-python = ">=3.8"
+keywords = [
+    "javascript-obfuscator",
+    "javascript",
+    "obfuscation",
+    "protection",
+    "anti-tamper",
+    "symbolication",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Security",
+]
+# Intentionally no runtime dependencies — stdlib only (urllib + json).
+dependencies = []
+
+[project.urls]
+Homepage = "https://javascriptobfuscator.com/"
+Repository = "https://github.com/richtexteditor/jso-protector-python"
+Documentation = "https://javascriptobfuscator.com/docs/"
+"npm CLI" = "https://javascriptobfuscator.com/docs/npmcli.aspx"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jso_protector"]
