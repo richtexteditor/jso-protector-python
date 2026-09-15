@@ -1,3 +1,5 @@
+> **This repository has moved to [javascriptobfuscator-com/jso-protector-python](https://github.com/javascriptobfuscator-com/jso-protector-python).** It is archived and no longer updated.
+
 # jso-protector — Python client
 
 Python client for the [JavaScript Obfuscator](https://javascriptobfuscator.com/) HTTP API. Mirrors the protect() surface of the [npm `jso-protector` CLI](https://javascriptobfuscator.com/docs/npmcli.aspx) so behavior stays in lockstep across runtimes.
